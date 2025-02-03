@@ -1,0 +1,699 @@
+****************************************
+Report : design
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:12:23 2024
+****************************************
+
+Design Attribute                         Value
+---------------------------------------------------------------------------
+Operating Conditions:
+  analysis_type                          on_chip_variation
+  operating_condition_min_name           tt_1p2v_25c
+  process_min                            1
+  temperature_min                        25
+  voltage_min                            1.2
+  tree_type_min                          balanced_case
+
+  operating_condition_max_name           tt_1p2v_25c
+  process_max                            1
+  temperature_max                        25
+  voltage_max                            1.2
+  tree_type_max                          balanced_case
+
+Wire Load:                               (use report_wire_load for more information)
+  wire_load_mode                         top
+  wire_load_model_max                    --
+  wire_load_model_min                    --
+  wire_load_selection_group_max          --
+  wire_load_selection_group_min          --
+  wire_load_min_block_size               0
+
+Design Rules:
+  max_capacitance                        --
+  min_capacitance                        --
+  max_fanout                             --
+  max_transition                         --
+  static_integrity                       --
+  dynamic_integrity                      --
+  max_coupled_transition                 --
+  max_area                               --
+
+Timing Ranges:
+  early_factor                           --
+  late_factor                            --
+
+Pin Input Delays:
+None specified.
+
+Pin Output Delays:
+None specified.
+Fast Analysis:                           disabled
+
+1
+****************************************
+Report : reference
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:12:23 2024
+****************************************
+
+
+Attributes:
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    A - abstracted timing model
+    E - extracted timing model
+    S - Stamp timing model
+    Q - Quick timing model (QTM)
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+--------------------------------------------------------------------------------
+AO22XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     257      2590.56      
+AOI21X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     6          43.20      
+AOI221XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     4          46.08      
+AOI22X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     131      1131.84      
+AOI2BB1XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     1           8.64      
+AOI2BB2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     1          10.08      
+CLKAND2X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     1           7.20      
+CLKBUFX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     16         92.16      
+CLKINVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     2           8.64      
+DFFQX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   24.48     256      6266.88      n
+DFFRXLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   33.12     37       1225.44      n
+DFFSX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   30.24     3          90.72      n
+INVX1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     15         64.80      
+INVX2TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     325      1404.00      
+NAND2BX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     1           7.20      
+NAND2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     7          40.32      
+NAND3BX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     1           8.64      
+NAND3XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     2          14.40      
+NAND4X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     32        276.48      
+NOR2BX1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     1           7.20      
+NOR2X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     2          11.52      
+NOR2XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     1           5.76      
+NOR3XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     6          43.20      
+OAI211XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     2          17.28      
+OAI21XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     2          14.40      
+OAI22X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     5          43.20      
+OAI2BB2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     3          30.24      
+OR2X1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     22        158.40      
+OR3X1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     12        103.68      
+OR4X2TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     8          80.64      
+XNOR2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     1          11.52      
+XOR2X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     1          11.52      
+--------------------------------------------------------------------------------
+Total 32 references                                   13875.84
+1
+****************************************
+Report : constraint
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:12:23 2024
+****************************************
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    rclk                         0.00      1.00      0.00
+    wclk                         0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    rclk                         0.00      1.00      0.00
+    wclk                         0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_delay/setup                                  0.00  (MET)
+    min_delay/hold                                   0.00  (MET)
+    recovery                                         0.00  (MET)
+    removal                                          0.00  (MET)
+    sequential_clock_pulse_width                     0.00  (MET)
+    sequential_clock_min_period                      0.00  (MET)
+    max_capacitance                                  0.00  (MET)
+    max_transition                                   0.00  (MET)
+
+1
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:12:23 2024
+****************************************
+
+
+
+
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min_max
+	-max_paths 1
+	-sort_by slack
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:12:23 2024
+****************************************
+
+
+  Startpoint: rrst_n (input port clocked by wclk)
+  Endpoint: rptr_empty1_rempty_reg
+               (removal check against rising-edge clock rclk)
+  Path Group: **async_default**
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock wclk (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  0.0500     0.0500 r
+  rrst_n (in)                                           0.0424     0.0924 r
+  U986/Y (INVX2TS)                                      0.1120     0.2044 f
+  U988/Y (INVX2TS)                                      0.1378     0.3422 r
+  rptr_empty1_rempty_reg/SN (DFFSX1TS)                  0.0000     0.3422 r
+  data arrival time                                                0.3422
+
+  clock rclk (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clock reconvergence pessimism                         0.0000     0.0000
+  rptr_empty1_rempty_reg/CK (DFFSX1TS)                             0.0000 r
+  library removal time                                  0.1307     0.1307
+  data required time                                               0.1307
+  ------------------------------------------------------------------------------
+  data required time                                               0.1307
+  data arrival time                                               -0.3422
+  ------------------------------------------------------------------------------
+  slack (MET)                                                      0.2115
+
+
+
+  Startpoint: rptr_empty1_rbin_reg_0_
+               (rising edge-triggered flip-flop clocked by rclk)
+  Endpoint: rptr_empty1_rempty_reg
+               (rising edge-triggered flip-flop clocked by rclk)
+  Path Group: rclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock rclk (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  rptr_empty1_rbin_reg_0_/CK (DFFRXLTS)                 0.0000     0.0000 r
+  rptr_empty1_rbin_reg_0_/QN (DFFRXLTS)                 1.0493     1.0493 r
+  U759/Y (INVX2TS)                                      0.2199     1.2693 f
+  U1014/Y (NAND3BX1TS)                                  0.2177     1.4869 r
+  U564/Y (INVX2TS)                                      0.1444     1.6313 f
+  U1020/Y (AOI21X1TS)                                   0.2231     1.8544 r
+  U1021/Y (NOR2X1TS)                                    0.1646     2.0189 f
+  U1022/Y (OAI2BB2XLTS)                                 0.4104     2.4293 r
+  U1162/Y (OAI22X1TS)                                   0.2495     2.6788 f
+  U694/Y (AOI221XLTS)                                   0.3226     3.0014 r
+  U565/Y (OAI211XLTS)                                   0.2461     3.2475 f
+  U1164/Y (AOI21X1TS)                                   0.1539     3.4014 r
+  rptr_empty1_rempty_reg/D (DFFSX1TS)                   0.0000     3.4014 r
+  data arrival time                                                3.4014
+
+  clock rclk (rise edge)                              1000.0000  1000.0000
+  clock network delay (ideal)                           0.0000   1000.0000
+  clock reconvergence pessimism                         0.0000   1000.0000
+  rptr_empty1_rempty_reg/CK (DFFSX1TS)                           1000.0000 r
+  library setup time                                   -0.3141   999.6859
+  data required time                                             999.6859
+  ------------------------------------------------------------------------------
+  data required time                                             999.6859
+  data arrival time                                               -3.4014
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    996.2845
+
+
+1
+****************************************
+Report : design
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:14:41 2024
+****************************************
+
+Design Attribute                         Value
+---------------------------------------------------------------------------
+Operating Conditions:
+  analysis_type                          on_chip_variation
+  operating_condition_min_name           tt_1p2v_25c
+  process_min                            1
+  temperature_min                        25
+  voltage_min                            1.2
+  tree_type_min                          balanced_case
+
+  operating_condition_max_name           tt_1p2v_25c
+  process_max                            1
+  temperature_max                        25
+  voltage_max                            1.2
+  tree_type_max                          balanced_case
+
+Wire Load:                               (use report_wire_load for more information)
+  wire_load_mode                         top
+  wire_load_model_max                    --
+  wire_load_model_min                    --
+  wire_load_selection_group_max          --
+  wire_load_selection_group_min          --
+  wire_load_min_block_size               0
+
+Design Rules:
+  max_capacitance                        --
+  min_capacitance                        --
+  max_fanout                             --
+  max_transition                         --
+  static_integrity                       --
+  dynamic_integrity                      --
+  max_coupled_transition                 --
+  max_area                               --
+
+Timing Ranges:
+  early_factor                           --
+  late_factor                            --
+
+Pin Input Delays:
+None specified.
+
+Pin Output Delays:
+None specified.
+Fast Analysis:                           disabled
+
+1
+****************************************
+Report : reference
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:14:41 2024
+****************************************
+
+
+Attributes:
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    A - abstracted timing model
+    E - extracted timing model
+    S - Stamp timing model
+    Q - Quick timing model (QTM)
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+--------------------------------------------------------------------------------
+AO22XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     257      2590.56      
+AOI21X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     6          43.20      
+AOI221XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     4          46.08      
+AOI22X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     131      1131.84      
+AOI2BB1XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     1           8.64      
+AOI2BB2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     1          10.08      
+CLKAND2X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     1           7.20      
+CLKBUFX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     16         92.16      
+CLKINVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     2           8.64      
+DFFQX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   24.48     256      6266.88      n
+DFFRXLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   33.12     37       1225.44      n
+DFFSX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   30.24     3          90.72      n
+INVX1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     15         64.80      
+INVX2TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     325      1404.00      
+NAND2BX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     1           7.20      
+NAND2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     7          40.32      
+NAND3BX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     1           8.64      
+NAND3XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     2          14.40      
+NAND4X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     32        276.48      
+NOR2BX1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     1           7.20      
+NOR2X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     2          11.52      
+NOR2XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     1           5.76      
+NOR3XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     6          43.20      
+OAI211XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     2          17.28      
+OAI21XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     2          14.40      
+OAI22X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     5          43.20      
+OAI2BB2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     3          30.24      
+OR2X1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     22        158.40      
+OR3X1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     12        103.68      
+OR4X2TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     8          80.64      
+XNOR2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     1          11.52      
+XOR2X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     1          11.52      
+--------------------------------------------------------------------------------
+Total 32 references                                   13875.84
+1
+****************************************
+Report : constraint
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:14:41 2024
+****************************************
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    rclk                         0.00      1.00      0.00
+    wclk                         0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    rclk                         0.00      1.00      0.00
+    wclk                         0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_delay/setup                                  0.00  (MET)
+    min_delay/hold                                   0.00  (MET)
+    recovery                                         0.00  (MET)
+    removal                                          0.00  (MET)
+    sequential_clock_pulse_width                     0.00  (MET)
+    sequential_clock_min_period                      0.00  (MET)
+    max_capacitance                                  0.00  (MET)
+    max_transition                                   0.00  (MET)
+
+1
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:14:41 2024
+****************************************
+
+
+
+
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min_max
+	-max_paths 1
+	-sort_by slack
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:14:41 2024
+****************************************
+
+
+  Startpoint: rrst_n (input port clocked by wclk)
+  Endpoint: rptr_empty1_rempty_reg
+               (removal check against rising-edge clock rclk)
+  Path Group: **async_default**
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock wclk (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  0.0500     0.0500 r
+  rrst_n (in)                                           0.0424     0.0924 r
+  U986/Y (INVX2TS)                                      0.1120     0.2044 f
+  U988/Y (INVX2TS)                                      0.1378     0.3422 r
+  rptr_empty1_rempty_reg/SN (DFFSX1TS)                  0.0000     0.3422 r
+  data arrival time                                                0.3422
+
+  clock rclk (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clock reconvergence pessimism                         0.0000     0.0000
+  rptr_empty1_rempty_reg/CK (DFFSX1TS)                             0.0000 r
+  library removal time                                  0.1307     0.1307
+  data required time                                               0.1307
+  ------------------------------------------------------------------------------
+  data required time                                               0.1307
+  data arrival time                                               -0.3422
+  ------------------------------------------------------------------------------
+  slack (MET)                                                      0.2115
+
+
+
+  Startpoint: rptr_empty1_rbin_reg_0_
+               (rising edge-triggered flip-flop clocked by rclk)
+  Endpoint: rptr_empty1_rempty_reg
+               (rising edge-triggered flip-flop clocked by rclk)
+  Path Group: rclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock rclk (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  rptr_empty1_rbin_reg_0_/CK (DFFRXLTS)                 0.0000     0.0000 r
+  rptr_empty1_rbin_reg_0_/QN (DFFRXLTS)                 1.0493     1.0493 r
+  U759/Y (INVX2TS)                                      0.2199     1.2693 f
+  U1014/Y (NAND3BX1TS)                                  0.2177     1.4869 r
+  U564/Y (INVX2TS)                                      0.1444     1.6313 f
+  U1020/Y (AOI21X1TS)                                   0.2231     1.8544 r
+  U1021/Y (NOR2X1TS)                                    0.1646     2.0189 f
+  U1022/Y (OAI2BB2XLTS)                                 0.4104     2.4293 r
+  U1162/Y (OAI22X1TS)                                   0.2495     2.6788 f
+  U694/Y (AOI221XLTS)                                   0.3226     3.0014 r
+  U565/Y (OAI211XLTS)                                   0.2461     3.2475 f
+  U1164/Y (AOI21X1TS)                                   0.1539     3.4014 r
+  rptr_empty1_rempty_reg/D (DFFSX1TS)                   0.0000     3.4014 r
+  data arrival time                                                3.4014
+
+  clock rclk (rise edge)                              1000.0000  1000.0000
+  clock network delay (ideal)                           0.0000   1000.0000
+  clock reconvergence pessimism                         0.0000   1000.0000
+  rptr_empty1_rempty_reg/CK (DFFSX1TS)                           1000.0000 r
+  library setup time                                   -0.3141   999.6859
+  data required time                                             999.6859
+  ------------------------------------------------------------------------------
+  data required time                                             999.6859
+  data arrival time                                               -3.4014
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    996.2845
+
+
+1
+****************************************
+Report : Switching Activity
+	
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:14:41 2024
+****************************************
+
+ Switching Activity Overview Statistics for "FIFO"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             1196(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      1196
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     22(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      22
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        304(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      304
+Combinational     870(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      870
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Static Probability Overview Statistics for "FIFO"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             1196(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      1196
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     22(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      22
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        304(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      304
+Combinational     870(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      870
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1
+****************************************
+Report : Switching Activity
+	-list_not_annotated
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:14:41 2024
+****************************************
+
+ Switching Activity Overview Statistics for "FIFO"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             1196(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      1196
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     22(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      22
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        304(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      304
+Combinational     870(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      870
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Static Probability Overview Statistics for "FIFO"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             1196(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      1196
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     22(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      22
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        304(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      304
+Combinational     870(100.00%)      0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      870
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+List of nonannotated nets :
+1
+****************************************
+Report : Time Based Power
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:14:42 2024
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           3.547e-07    0.0000    0.0000 3.547e-07 (92.46%)  i
+register                2.633e-09 3.536e-10 1.016e-08 1.315e-08 ( 3.43%)  
+combinational           4.814e-09 5.266e-09 5.705e-09 1.578e-08 ( 4.11%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 5.619e-09   ( 1.46%)
+  Cell Internal Power  = 3.621e-07   (94.40%)
+  Cell Leakage Power   = 1.587e-08   ( 4.14%)
+                         ---------
+Total Power            = 3.836e-07  (100.00%)
+
+X Transition Power     = 1.188e-09
+Glitching Power        = 8.269e-12
+
+Peak Power             =    0.0418
+Peak Time              = 1300000.000
+
+1
+****************************************
+Report : Time Based Power
+	-hierarchy
+Design : FIFO
+Version: U-2022.12-SP5
+Date   : Mon Dec  2 23:14:42 2024
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+FIFO                                  3.62e-07 5.62e-09 1.59e-08 3.84e-07 100.0
+
+
+                                      Peak     Peak            Glitch   X-tran
+Hierarchy                             Power    Time            Power    Power
+--------------------------------------------------------------------------------
+FIFO                                  4.18e-02 1300000.000-1300000.001
+                                                               8.27e-12 1.19e-09
+1
